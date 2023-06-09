@@ -107,8 +107,9 @@ function gameEngine() {
         //unshift add elemnt in strting of array
 
         if(score > highval){
-            localStorage.setItem("highscore",JSON.stringify(score));
-            highscorebox.innerHTML = "HIGHEST SCORE: "+ score;
+            highval = score;
+            localStorage.setItem("highscore",JSON.stringify(highval));
+            highscorebox.innerHTML = "HIGHEST SCORE: "+ highval;
 
         }
        
